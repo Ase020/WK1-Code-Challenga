@@ -19,4 +19,23 @@ function gradeGenerator(grade) {
    }
 }
 
-gradeGenerator(23);
+// gradeGenerator(23);
+
+// Challenge 2: Speed Detector
+
+function speedDetector(speed) {
+   let points = 0;
+   if (speed > 70) {
+      points = Math.floor((speed - 70) / 5);
+      //   console.log(`Points: ${points}`);
+      if (points > 12) {
+         return "License suspended";
+      }
+      return `Points: ${points}`;
+   } else {
+      //   console.log("Ok");
+      return "Ok";
+   }
+}
+
+console.log(speedDetector(164));
